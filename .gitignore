@@ -1,0 +1,13 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.egg-info/
+.venv/
+env/
+ask-my-data-env/
+*.db  # Ignore SQLite files
+
+# Misc
+.DS_Store 
