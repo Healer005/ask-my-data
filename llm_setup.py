@@ -11,7 +11,7 @@ load_dotenv()
 
 # Initialize LLM with Hugging Face endpoint for conversational model
 llm = HuggingFaceEndpoint(
-    repo_id="mistralai/Mixtral-8x7B-Instruct-v0.1",
+    repo_id="Mixtral-8x7B-Instruct-v0.1", # Add your model repo ID here
     huggingfacehub_api_token=os.getenv("HUGGINGFACEHUB_API_TOKEN"),
     timeout=300  # 5 minutes timeout
 )
