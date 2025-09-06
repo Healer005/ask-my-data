@@ -10,17 +10,25 @@ This tool is designed to make data analysis accessible without deep SQL or progr
 - Python 3.10+
 - Pandas (for data loading and manipulation)
 - SQLAlchemy (for database connections and operations)
-- Future steps will include: LangChain (for LLM orchestration), OpenAI API (for LLM), Matplotlib (for visualizations), Pydantic (for structured outputs), Flask (for UI), Docker (for deployment), and Chroma (for vector search in RAG).
-
+- LangChain (for LLM orchestration)
+- Future steps will include: OpenAI API (for LLM), Matplotlib (for visualizations), Pydantic (for structured outputs), Flask (for UI), Docker (for deployment), and Chroma (for vector search in RAG).
+  
 ## Setup and Usage
 ### Prerequisites
 - Install Python 3.10+.
 - Create a virtual environment: `python -m venv ask-my-data-env` and activate it with `ask-my-data-env\Scripts\activate` (Windows).
-- Install packages: `pip install pandas sqlalchemy`.
+- Install packages: `pip install pandas sqlalchemy langchain langchain-huggingface python-dotenv`.
 - The dataset `sales.csv` is included.
-
+- Create a `.env` file in the project root with your Hugging Face API token: `HUGGINGFACEHUB_API_TOKEN=your_actual_hf_token_here` (replace with your token from https://huggingface.co/settings/tokens).
 ### Step 1: Data Loading
-Run `python data_loader.py` to load `sales.csv` into `sales.db` (SQLite).
-
+- Run `python data_loader.py` to load `sales.csv` into `sales.db` (SQLite).
+### Step 2: LLM Setup for SQL Generation
+- Configure `llm_setup.py` to use `mistralai/Mixtral-8x7B-Instruct-v0.1` with `ChatHuggingFace` to generate SQL queries from natural language prompts.
+- Instructions:
+  1. Ensure `llm_setup.py` is updated with the provided code.
+  2. Run `python llm_setup.py` to generate a SQL query (e.g., for "Total revenue by region").
+  - Note: The script extracts the SQL query from the model’s response. If explanatory text appears, the regex in `extract_sql_query` may need adjustment.
+  - Troubleshooting: If a `StopIteration` or `ValueError` occurs, verify the model’s free tier availability or switch to a supported alternative (e.g., `gpt2`).
+  
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
