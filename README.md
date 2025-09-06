@@ -29,6 +29,9 @@ This tool is designed to make data analysis accessible without deep SQL or progr
   2. Run `python llm_setup.py` to generate a SQL query (e.g., for "Total revenue by region").
   - Note: The script extracts the SQL query from the model’s response. If explanatory text appears, the regex in `extract_sql_query` may need adjustment.
   - Troubleshooting: If a `StopIteration` or `ValueError` occurs, verify the model’s free tier availability or switch to a supported alternative (e.g., `gpt2`).
+### Step 3: Integrate SQL Execution Tool
+- Pending: Implement a tool to execute the generated SQL query against `sales.db` and return results.
+- Next Steps: Will be provided in the next update, including code for `sql_executor.py`.
   
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
