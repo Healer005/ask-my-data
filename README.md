@@ -12,7 +12,7 @@ This tool is designed to make data analysis accessible without deep SQL or progr
 - SQLAlchemy (for database connections and operations)
 - LangChain (for LLM orchestration)
 - Future steps will include: OpenAI API (for LLM), Matplotlib (for visualizations), Pydantic (for structured outputs), Flask (for UI), Docker (for deployment), and Chroma (for vector search in RAG).
-  
+
 ## Setup and Usage
 ### Prerequisites
 - Install Python 3.10+.
@@ -23,15 +23,18 @@ This tool is designed to make data analysis accessible without deep SQL or progr
 ### Step 1: Data Loading
 - Run `python data_loader.py` to load `sales.csv` into `sales.db` (SQLite).
 ### Step 2: LLM Setup for SQL Generation
-- Configure `llm_setup.py` to use `mistralai/Mixtral-8x7B-Instruct-v0.1` with `ChatHuggingFace` to generate SQL queries from natural language prompts.
+- Configured `llm_setup.py` to use `mistralai/Mixtral-8x7B-Instruct-v0.1` with `ChatHuggingFace` to generate SQL queries from natural language prompts.
 - Instructions:
   1. Ensure `llm_setup.py` is updated with the provided code.
   2. Run `python llm_setup.py` to generate a SQL query (e.g., for "Total revenue by region").
   - Note: The script extracts the SQL query from the model’s response. If explanatory text appears, the regex in `extract_sql_query` may need adjustment.
   - Troubleshooting: If a `StopIteration` or `ValueError` occurs, verify the model’s free tier availability or switch to a supported alternative (e.g., `gpt2`).
 ### Step 3: Integrate SQL Execution Tool
-- Pending: Implement a tool to execute the generated SQL query against `sales.db` and return results.
-- Next Steps: Will be provided in the next update, including code for `sql_executor.py`.
-  
+- Added `sql_executor.py` to execute generated SQL queries against `sales.db` and integrated it into `llm_setup.py`.
+- Instructions:
+  1. Ensure `sql_executor.py` is added and `llm_setup.py` is updated.
+  2. Run `python llm_setup.py` to generate and execute a SQL query, viewing the results in a table format.
+  - Note: The output now includes a readable table of results, with proper handling of column names with spaces.
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
