@@ -27,7 +27,7 @@ The primary goal of Ask-My-Data is to democratize data analysis by allowing user
 ### Step-by-Step Instructions
 1. **Data Loading**
    - Run `python data_loader.py` to import `sales.csv` into `sales.db`. This script handles data preprocessing and schema creation, ensuring the database is ready for querying. Use `python verify_data_loader.py` to confirm the data loader function works correctly, with debug outputs validating the process.
-   - <img width="1112" height="503" alt="data_loader" src="https://github.com/user-attachments/assets/6048fe69-2645-4269-9469-99f09c2f5764" />
+   - <img width="1089" height="511" alt="image" src="https://github.com/user-attachments/assets/b53b49cc-845f-4279-b256-f4e07801f3a1" />
 
 2. **LLM Setup for SQL Generation**
    - Execute `python llm_setup.py` to test the initial SQL query generation process. This script sets up the LangChain pipeline with the HuggingFace endpoint, using a static prompt to generate SQL based on the database schema (e.g., for "Total revenue"). Screenshots like `llm_setup_static.PNG` document this step.
