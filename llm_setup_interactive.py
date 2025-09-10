@@ -84,6 +84,8 @@ from sql_executor import execute_sql_query
 simple_chain = sql_prompt | chat_llm
 
 if __name__ == "__main__":
+    import matplotlib.pyplot as plt
+
     engine = create_engine('sqlite:///sales.db')
     schema = get_schema(engine)
     print(f"Schema retrieved: {schema}")
@@ -129,6 +131,19 @@ if __name__ == "__main__":
                                 for i, item in enumerate(row) if i < len(col_widths)
                             )
                             print(row_str)
+
+                        # Add visualization for grouped data with numeric value
+                        if len(headers) == 2 and all(isinstance(row[1], (int, float)) for row in result):  # Check for two columns with numeric second column
+                            categories = [str(row[0]) for row in result]
+                            values = [float(row[1]) for row in result]
+                            plt.figure(figsize=(10, 6))
+                            plt.bar(categories, values, color='skyblue')
+                            plt.xlabel(headers[0])
+                            plt.ylabel(headers[1])
+                            plt.title(f"{headers[1]} by {headers[0]}")
+                            plt.xticks(rotation=45, ha='right')
+                            plt.tight_layout()
+                            plt.show()
                     else:
                         print("  No results found.")
                 else:
