@@ -9,10 +9,10 @@ The primary goal of Ask-My-Data is to democratize data analysis by allowing user
 - **Python 3.10+**: Core programming language for the tool.
 - **Pandas**: Used to load and manipulate the `sales.csv` dataset into a structured format.
 - **SQLAlchemy**: Facilitates database connections and SQL query execution on the `sales.db` SQLite database.
-- **LangChain with HuggingFace Endpoint**: Orchestrates the LLM (e.g., Mixtral-8x7B-Instruct-v0.1) to generate SQL queries based on the database schema.
+- **LangChain with HuggingFace Endpoint**: Orchestrates the LLM to generate SQL queries based on the database schema.
 - **python-dotenv**: Manages environment variables, such as the HuggingFace API token.
 - **re (Regular Expressions)**: Employed to extract and parse SQL queries from LLM responses, with fixes for incomplete patterns.
-- **Matplotlib**: Added for generating visualizations (e.g., bar charts) of query results.
+- **Matplotlib**: Added for generating visualizations of query results.
 - **Future Enhancements**: Planned integration includes OpenAI API for advanced LLM capabilities, Pydantic for structured data validation, Flask for a web-based UI, Docker for deployment, and Chroma for vector search in a Retrieval-Augmented Generation (RAG) system.
 
 ## Setup and Usage
