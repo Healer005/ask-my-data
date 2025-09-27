@@ -1,4 +1,5 @@
 # Ask-My-Data
+
 ## Description
 Ask-My-Data is an innovative, AI-powered data analysis tool that enables users to interact with their datasets using natural language queries. Leveraging Large Language Models (LLMs) integrated via LangChain, the tool dynamically generates SQL queries based on user input, executes them against a SQLite database, and returns results with detailed outputs, including the exact SQL used for transparency. Recent enhancements include visualizations using Matplotlib to graphically represent query results, making it a robust solution for data exploration without requiring deep SQL expertise. The project evolved through iterative development, addressing challenges like incomplete LLM responses, query extraction errors, and result formatting issues.
 
