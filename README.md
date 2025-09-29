@@ -101,7 +101,7 @@ GROUP BY region;
 ```
 
 **Visualization:**  
-![Total Revenue by Region]
+[Total Revenue by Region]
 <img width="1000" height="600" alt="total_revenue_by_region" src="https://github.com/user-attachments/assets/886ca81c-275f-4c9e-bc84-d2784d015776" />
 
 ---
