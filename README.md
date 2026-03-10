@@ -107,13 +107,8 @@ GROUP BY region;
 ---
 
 ## ✅ Screenshots & Results
-All verification screenshots are available inside the `results/` folder.  
-They include:  
 - SQL integration test  
-- Query validation outputs  
-- Revenue by region & sales channel  
-- Order priority analysis
-   
+  
 <img width="1087" height="428" alt="sql_integration" src="https://github.com/user-attachments/assets/fa5a6941-d1ab-4bcc-a598-e884ad5d4f7c" />
 
 ---
