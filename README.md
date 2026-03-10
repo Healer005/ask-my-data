@@ -107,8 +107,7 @@ GROUP BY region;
 ---
 
 ## ✅ Screenshots & Results
-- SQL integration test  
-  
+- SQL integration test
 <img width="1087" height="428" alt="sql_integration" src="https://github.com/user-attachments/assets/fa5a6941-d1ab-4bcc-a598-e884ad5d4f7c" />
 
 ---
