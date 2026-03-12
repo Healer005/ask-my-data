@@ -109,6 +109,13 @@ GROUP BY region;
 ## ✅ Screenshots & Results
 - SQL integration test
 <img width="1087" height="428" alt="sql_integration" src="https://github.com/user-attachments/assets/fa5a6941-d1ab-4bcc-a598-e884ad5d4f7c" />
+- Interactive terminal-based input
+<img width="1908" height="920" alt="interactive_terminal-based_input" src="https://github.com/user-attachments/assets/ed504113-a9af-4ced-ac89-8fe4c044a6ce" />
+- Tests
+<img width="1920" height="1030" alt="test_1" src="https://github.com/user-attachments/assets/3ee20600-6e09-4c15-a730-b331e949f181" />
+<img width="1920" height="1030" alt="test_2" src="https://github.com/user-attachments/assets/52c5e965-632c-4a2d-b5fe-f2a0ce3b1656" />
+<img width="1920" height="1030" alt="test_3" src="https://github.com/user-attachments/assets/564d21b4-1abf-4c91-9e19-923def9e3975" />
+
 
 ---
 
