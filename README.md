@@ -115,6 +115,8 @@ GROUP BY region;
 <img width="1920" height="1030" alt="test_1" src="https://github.com/user-attachments/assets/3ee20600-6e09-4c15-a730-b331e949f181" />
 <img width="1920" height="1030" alt="test_2" src="https://github.com/user-attachments/assets/52c5e965-632c-4a2d-b5fe-f2a0ce3b1656" />
 <img width="1920" height="1030" alt="test_3" src="https://github.com/user-attachments/assets/564d21b4-1abf-4c91-9e19-923def9e3975" />
+- Visualization Examples
+
 
 
 ---
