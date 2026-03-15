@@ -118,7 +118,6 @@ GROUP BY region;
 - Visualization Examples
 
 
-
 ---
 
 ## 📌 Future Improvements
